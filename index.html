@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Mohit Kumar - Full-Stack Developer Portfolio. Java, Spring Boot, React, and modern web development. Vancouver, BC.">
+  <meta name="keywords" content="software engineer, Java developer, Spring Boot, React, full-stack, Vancouver, portfolio">
+  <meta name="author" content="Mohit Kumar">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mohit Kumar | Full-Stack Developer">
+  <meta property="og:description" content="Developer portfolio — inventory of skills, shipped projects, and ready-to-deploy talent.">
+
+  <title>Mohit Kumar | Full-Stack Developer</title>
+
+  <link rel="preconnect" href="https://use.fontawesome.com">
+  <link rel="dns-prefetch" href="https://use.fontawesome.com">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css" crossorigin="anonymous">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mohit Kumar",
+    "jobTitle": "Full-Stack Developer",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Vancouver",
+      "addressRegion": "BC",
+      "addressCountry": "CA"
+    },
+    "knowsAbout": ["Java", "Spring Boot", "React", "JavaScript", "MySQL", "MongoDB", "Docker", "AWS"],
+    "url": "https://your-domain.com"
+  }
+  </script>
+</head>
+<body>
+  <!-- Conveyor Belt Strip -->
+  <div class="conveyor-strip" aria-hidden="true">
+    <div class="conveyor-belt">
+      <div class="conveyor-track">
+        <div class="package-box"><i class="fa-brands fa-java"></i></div>
+        <div class="package-box"><i class="fa-brands fa-react"></i></div>
+        <div class="package-box"><i class="fa-brands fa-js"></i></div>
+        <div class="package-box"><i class="fa-solid fa-leaf"></i></div>
+        <div class="package-box"><i class="fa-solid fa-database"></i></div>
+        <div class="package-box"><i class="fa-brands fa-docker"></i></div>
+        <div class="package-box"><i class="fa-brands fa-aws"></i></div>
+        <div class="package-box"><i class="fa-brands fa-html5"></i></div>
+        <div class="package-box"><i class="fa-brands fa-css3-alt"></i></div>
+        <div class="package-box"><i class="fa-brands fa-git-alt"></i></div>
+        <!-- duplicate for seamless loop -->
+        <div class="package-box"><i class="fa-brands fa-java"></i></div>
+        <div class="package-box"><i class="fa-brands fa-react"></i></div>
+        <div class="package-box"><i class="fa-brands fa-js"></i></div>
+        <div class="package-box"><i class="fa-solid fa-leaf"></i></div>
+        <div class="package-box"><i class="fa-solid fa-database"></i></div>
+        <div class="package-box"><i class="fa-brands fa-docker"></i></div>
+        <div class="package-box"><i class="fa-brands fa-aws"></i></div>
+        <div class="package-box"><i class="fa-brands fa-html5"></i></div>
+        <div class="package-box"><i class="fa-brands fa-css3-alt"></i></div>
+        <div class="package-box"><i class="fa-brands fa-git-alt"></i></div>
+      </div>
+    </div>
+    <div class="conveyor-scanner">
+      <div class="scanner-line"></div>
+      <span class="scanner-label">SCANNING</span>
+    </div>
+  </div>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="warehouse-logo">
+        <i class="fa-solid fa-warehouse"></i>
+        <span>MK Logistics</span>
+      </div>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about"><i class="fa-solid fa-clipboard-list"></i> Manifest</a></li>
+        <li><a href="#education"><i class="fa-solid fa-route"></i> Route</a></li>
+        <li><a href="#skills"><i class="fa-solid fa-boxes-stacked"></i> Inventory</a></li>
+        <li><a href="#projects"><i class="fa-solid fa-truck-fast"></i> Shipments</a></li>
+        <li><a href="#contact"><i class="fa-solid fa-headset"></i> Dispatch</a></li>
+      </ul>
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle mobile menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <button id="theme-toggle" aria-label="Toggle dark/light mode">🌙</button>
+
+  <!-- Hero: Warehouse Control Panel -->
+  <header class="hero-header warehouse-hero">
+    <div class="warehouse-grid-bg" aria-hidden="true"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="employee-badge">
+          <div class="badge-photo"><i class="fa-solid fa-user-gear"></i></div>
+          <div class="badge-info">
+            <span class="badge-id">EMP# MK-2025</span>
+            <span class="badge-dept">Full-Stack Operations</span>
+          </div>
+        </div>
+        <h1 class="gradient-text">Mohit Kumar</h1>
+        <div class="title-container">
+          <span class="role-badge">🚛</span>
+          <p class="role-text">Full-Stack Developer</p>
+          <span class="status-badge status-active"><i class="fa-solid fa-circle"></i> ON DUTY</span>
+        </div>
+        <div class="warehouse-stats">
+          <div class="stat-box">
+            <span class="stat-num" data-target="28">0</span>
+            <span class="stat-label">Skills Stocked</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-num" data-target="6">0</span>
+            <span class="stat-label">Shipments</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-num" data-target="100">0</span>
+            <span class="stat-label">% Ready</span>
+          </div>
+        </div>
+        <div class="forklift-animation" aria-hidden="true">
+          <i class="fa-solid fa-truck-ramp-box forklift"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- WMS Terminal -->
+    <section id="intro" class="intro-section wms-section">
+      <div class="intro-bg"></div>
+      <div class="code-editor wms-terminal">
+        <div class="editor-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="editor-title"><i class="fa-solid fa-terminal"></i> WMS — Warehouse Management System v2.0</span>
+        </div>
+        <div class="terminal-content">
+          <div class="terminal-output" id="terminal-output">
+            <div class="output-line">[WMS] Warehouse system online. Type 'help' for commands.</div>
+          </div>
+          <div class="terminal-line">
+            <span class="prompt">wms&gt;</span>
+            <input type="text" id="terminal-input" class="terminal-input" placeholder="Enter command..." autocomplete="off">
+            <span class="cursor">|</span>
+          </div>
+        </div>
+        <div class="terminal-controls">
+          <button id="run-demo" class="run-btn primary"><i class="fa-solid fa-play"></i> Run Inventory Scan</button>
+          <button id="clear-terminal" class="run-btn secondary"><i class="fa-solid fa-eraser"></i> Clear</button>
+          <button id="help-btn" class="run-btn secondary"><i class="fa-solid fa-circle-question"></i> Help</button>
+        </div>
+        <div class="hidden-commands">
+          <div class="command-output" id="wms-demo">
+            <div class="output-line">[SCAN] Initiating full warehouse scan...</div>
+            <div class="output-line">╔══════════════════════════════════════════════════════╗</div>
+            <div class="output-line">║           MOHIT KUMAR — WAREHOUSE MANIFEST           ║</div>
+            <div class="output-line">╠══════════════════════════════════════════════════════╣</div>
+            <div class="output-line">║  Location: Vancouver, BC                             ║</div>
+            <div class="output-line">║  Role: Full-Stack Developer                          ║</div>
+            <div class="output-line">║  Zone A (Frontend): HTML, CSS, JS, React  [STOCKED]   ║</div>
+            <div class="output-line">║  Zone B (Backend): Java, Spring Boot     [STOCKED]   ║</div>
+            <div class="output-line">║  Zone C (Database): MySQL, MongoDB         [STOCKED]   ║</div>
+            <div class="output-line">║  Zone D (DevOps): Docker, AWS, Git       [STOCKED]   ║</div>
+            <div class="output-line">║  Status: ALL SYSTEMS GO — Ready to ship! 🚛           ║</div>
+            <div class="output-line">╚══════════════════════════════════════════════════════╝</div>
+          </div>
+          <div class="command-output" id="help-output">
+            <div class="output-line">Available WMS Commands:</div>
+            <div class="output-line">  scan      - Run full inventory scan</div>
+            <div class="output-line">  inventory - List all stocked skills</div>
+            <div class="output-line">  shipments - View active shipments (projects)</div>
+            <div class="output-line">  dispatch  - Contact dispatch center</div>
+            <div class="output-line">  manifest  - View employee manifest</div>
+            <div class="output-line">  clear     - Clear terminal</div>
+            <div class="output-line">  help      - Show this help message</div>
+          </div>
+          <div class="command-output" id="skills-output">
+            <div class="output-line">[INVENTORY REPORT]</div>
+            <div class="output-line">Zone A — Frontend:     HTML, CSS, JavaScript, React.js</div>
+            <div class="output-line">Zone B — Backend:      Java, Spring Boot, REST API, Spring MVC</div>
+            <div class="output-line">                       Spring Data JPA, Hibernate, JWT Auth</div>
+            <div class="output-line">Zone C — Databases:    MySQL, MongoDB</div>
+            <div class="output-line">Zone D — DevOps/Tools: Git, Docker, AWS, Postman</div>
+            <div class="output-line">Zone E — CS Core:      DSA, OOP, Problem Solving</div>
+            <div class="output-line">Total SKUs: 28 | Status: ALL IN STOCK ✓</div>
+          </div>
+          <div class="command-output" id="projects-output">
+            <div class="output-line">[ACTIVE SHIPMENTS]</div>
+            <div class="output-line">📦 SHP-001 | Smart Life Admin Assistant      | DELIVERED</div>
+            <div class="output-line">📦 SHP-002 | ShrinkPath URL Shortener            | DELIVERED</div>
+            <div class="output-line">📦 SHP-003 | JavaScript Weather App            | DELIVERED</div>
+            <div class="output-line">📦 SHP-004 | CSS Animation Showcase            | DELIVERED</div>
+            <div class="output-line">📦 SHP-005 | HTML Portfolio Template           | DELIVERED</div>
+            <div class="output-line">📦 SHP-006 | This Portfolio Website            | LOADING</div>
+          </div>
+          <div class="command-output" id="contact-output">
+            <div class="output-line">[DISPATCH CENTER]</div>
+            <div class="output-line">📧 Email:    mohit.k3089@gmail.com</div>
+            <div class="output-line">🐙 GitHub:   github.com/Mohit-kumar101</div>
+            <div class="output-line">💼 LinkedIn: linkedin.com/in/mohit-k-12b941275/</div>
+            <div class="output-line">📍 Hub:      Vancouver, BC, Canada</div>
+            <div class="output-line">🕐 Hours:    Always open for great projects!</div>
+          </div>
+          <div class="command-output" id="about-output">
+            <div class="output-line">[EMPLOYEE MANIFEST]</div>
+            <div class="output-line">Name:   Mohit Kumar</div>
+            <div class="output-line">ID:     MK-2025</div>
+            <div class="output-line">Role:   Full-Stack Developer</div>
+            <div class="output-line">Dept:   Software Engineering</div>
+            <div class="output-line">Goal:   Ship elegant, scalable applications</div>
+            <div class="output-line">Status: Available for deployment 🚀</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About: Employee Manifest -->
+    <section id="about">
+      <h2><i class="fa-solid fa-clipboard-list"></i> Employee Manifest</h2>
+      <div class="about-content manifest-card">
+        <div class="about-text">
+          <div class="barcode-strip" aria-hidden="true">
+            <div class="barcode-lines"></div>
+            <span class="barcode-num">MK2025-VAN-BC</span>
+          </div>
+          <p>Hey there! I'm <strong>Mohit Kumar</strong>, a full-stack developer who runs my skill warehouse like a well-oiled logistics operation — every technology stocked, organized, and ready to ship into production.</p>
+          <p>From frontend packages on the conveyor to backend systems on the loading dock, I build scalable applications with Java, Spring Boot, and modern web technologies.</p>
+          <div class="about-icons-row">
+            <i class="fa-brands fa-java about-icon java-icon" title="Java"></i>
+            <i class="fa-brands fa-react about-icon react-icon" title="React"></i>
+            <i class="fa-brands fa-js about-icon js-icon" title="JavaScript"></i>
+            <i class="fa-solid fa-leaf about-icon spring-icon" title="Spring Boot"></i>
+            <i class="fa-brands fa-docker about-icon docker-icon" title="Docker"></i>
+          </div>
+        </div>
+        <div class="about-skills">
+          <div class="about-skill inventory-pallet">
+            <span><i class="fa-solid fa-pallet"></i> Frontend Bay</span>
+            <p>HTML, CSS, JavaScript, React</p>
+            <span class="stock-tag in-stock">IN STOCK</span>
+          </div>
+          <div class="about-skill inventory-pallet">
+            <span><i class="fa-solid fa-gears"></i> Backend Bay</span>
+            <p>Java, Spring Boot, REST APIs</p>
+            <span class="stock-tag in-stock">IN STOCK</span>
+          </div>
+          <div class="about-skill inventory-pallet">
+            <span><i class="fa-solid fa-database"></i> Data Storage</span>
+            <p>MySQL, MongoDB, JPA</p>
+            <span class="stock-tag in-stock">IN STOCK</span>
+          </div>
+          <div class="about-skill inventory-pallet">
+            <span><i class="fa-solid fa-cloud"></i> DevOps Dock</span>
+            <p>Docker, AWS, Git, Postman</p>
+            <span class="stock-tag in-stock">IN STOCK</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Strip -->
+    <section class="resume-download-strip">
+      <div class="resume-strip-content">
+        <div class="resume-strip-text">
+          <h3><i class="fa-solid fa-file-invoice"></i> Shipping Documents</h3>
+          <p>Download my full resume — complete manifest of experience and qualifications</p>
+        </div>
+        <a href="resume.pdf" class="resume-strip-btn" target="_blank">
+          <i class="fa-solid fa-download"></i>
+          <span>Download Resume</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Education: Delivery Route -->
+    <section id="education">
+      <h2><i class="fa-solid fa-route"></i> Delivery Route — Education</h2>
+      <div class="timeline delivery-route">
+        <div class="timeline-item fade-in">
+          <div class="timeline-marker checkpoint"></div>
+          <div class="timeline-content shipment-card">
+            <span class="tracking-badge">STOP 1 — ORIGIN</span>
+            <h3>🎓 Bachelor of Science in Computer Science</h3>
+            <span class="timeline-date">Langara College, Vancouver — 2023–2025</span>
+            <p>Building a solid foundation in software engineering, algorithms, and system design — the origin hub of my developer journey.</p>
+          </div>
+        </div>
+        <div class="timeline-item fade-in">
+          <div class="timeline-marker checkpoint"></div>
+          <div class="timeline-content shipment-card">
+            <span class="tracking-badge">STOP 2</span>
+            <h4 class="course-title interactive-course" tabindex="0">💻 Advanced Data Structures & Algorithms</h4>
+            <div class="course-details" style="display:none;">
+              <p>AVL trees, graph algorithms, dynamic programming — optimized for peak performance benchmarks.</p>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item fade-in">
+          <div class="timeline-marker checkpoint"></div>
+          <div class="timeline-content shipment-card">
+            <span class="tracking-badge">STOP 3</span>
+            <h4>🌐 Full-Stack Web Development</h4>
+            <p>JavaScript ES6+, responsive CSS, server-side development — full-stack cargo loaded and ready.</p>
+          </div>
+        </div>
+        <div class="timeline-item fade-in">
+          <div class="timeline-marker checkpoint"></div>
+          <div class="timeline-content shipment-card">
+            <span class="tracking-badge">STOP 4</span>
+            <h4>🏆 Responsive Web Design Certification</h4>
+            <span class="timeline-date">freeCodeCamp — 2024–2025</span>
+            <p>Industry-recognized certification in mobile-first development and accessibility standards.</p>
+          </div>
+        </div>
+        <div class="timeline-item fade-in">
+          <div class="timeline-marker checkpoint"></div>
+          <div class="timeline-content shipment-card">
+            <span class="tracking-badge">STOP 5</span>
+            <h4>☁️ Cloud & DevOps Fundamentals</h4>
+            <p>Docker containerization, AWS deployment, CI/CD pipelines — logistics for the cloud era.</p>
+          </div>
+        </div>
+        <div class="timeline-item fade-in">
+          <div class="timeline-marker checkpoint"></div>
+          <div class="timeline-content shipment-card">
+            <span class="tracking-badge en-route">EN ROUTE</span>
+            <h4>🚀 Advanced React & Next.js</h4>
+            <span class="timeline-date">2025 — Ongoing</span>
+            <p>Currently shipping advanced React patterns, Next.js, SSR, and performance optimization.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills: Warehouse Zones -->
+    <section id="skills">
+      <h2><i class="fa-solid fa-boxes-stacked"></i> Warehouse Inventory — Skills</h2>
+      <p class="section-subtitle">Hover or click any SKU to scan it into the inventory reader</p>
+
+      <div class="warehouse-zones">
+        <!-- Zone A: Frontend -->
+        <div class="zone-card" data-zone="A">
+          <div class="zone-header">
+            <span class="zone-label">ZONE A</span>
+            <h3><i class="fa-solid fa-desktop"></i> Frontend Bay</h3>
+            <span class="zone-status"><i class="fa-solid fa-circle-check"></i> Fully Stocked</span>
+          </div>
+          <div class="zone-shelf">
+            <button type="button" class="sku-tag" data-skill="HTML" data-desc="Semantic markup, accessibility, and SEO-friendly structure for every shipment.">
+              <i class="fa-brands fa-html5"></i> HTML
+            </button>
+            <button type="button" class="sku-tag" data-skill="CSS" data-desc="Responsive layouts, Flexbox, Grid, and modern CSS animations.">
+              <i class="fa-brands fa-css3-alt"></i> CSS
+            </button>
+            <button type="button" class="sku-tag" data-skill="JavaScript" data-desc="ES6+, async programming, DOM manipulation, and dynamic UIs.">
+              <i class="fa-brands fa-js"></i> JavaScript
+            </button>
+            <button type="button" class="sku-tag recommended" data-skill="React.js" data-desc="Component architecture, hooks, and modern UI patterns. Highly recommended addition to any frontend shipment.">
+              <i class="fa-brands fa-react"></i> React.js <span class="sku-badge">TOP SKU</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Zone B: Backend -->
+        <div class="zone-card" data-zone="B">
+          <div class="zone-header">
+            <span class="zone-label">ZONE B</span>
+            <h3><i class="fa-solid fa-gears"></i> Backend Dock</h3>
+            <span class="zone-status"><i class="fa-solid fa-circle-check"></i> Fully Stocked</span>
+          </div>
+          <div class="zone-shelf">
+            <button type="button" class="sku-tag" data-skill="Java" data-desc="Object-oriented programming, collections, multithreading, and enterprise patterns.">
+              <i class="fa-brands fa-java"></i> Java
+            </button>
+            <button type="button" class="sku-tag" data-skill="Spring Boot" data-desc="Rapid application development with auto-configuration and embedded servers.">
+              <i class="fa-solid fa-leaf"></i> Spring Boot
+            </button>
+            <button type="button" class="sku-tag" data-skill="REST API" data-desc="Designing and building RESTful web services with proper HTTP methods and status codes.">
+              <i class="fa-solid fa-plug"></i> REST API
+            </button>
+            <button type="button" class="sku-tag" data-skill="Spring MVC" data-desc="Model-View-Controller architecture for structured web application development.">
+              <i class="fa-solid fa-sitemap"></i> Spring MVC
+            </button>
+            <button type="button" class="sku-tag" data-skill="Spring Data JPA" data-desc="Data persistence layer with repositories, entities, and query methods.">
+              <i class="fa-solid fa-database"></i> Spring Data JPA
+            </button>
+            <button type="button" class="sku-tag" data-skill="Hibernate" data-desc="ORM framework for mapping Java objects to relational database tables.">
+              <i class="fa-solid fa-layer-group"></i> Hibernate
+            </button>
+            <button type="button" class="sku-tag" data-skill="JWT Authentication" data-desc="Secure token-based authentication for stateless API security.">
+              <i class="fa-solid fa-key"></i> JWT Auth
+            </button>
+          </div>
+        </div>
+
+        <!-- Zone C: Databases -->
+        <div class="zone-card" data-zone="C">
+          <div class="zone-header">
+            <span class="zone-label">ZONE C</span>
+            <h3><i class="fa-solid fa-warehouse"></i> Data Storage</h3>
+            <span class="zone-status"><i class="fa-solid fa-circle-check"></i> Fully Stocked</span>
+          </div>
+          <div class="zone-shelf">
+            <button type="button" class="sku-tag" data-skill="MySQL" data-desc="Relational database design, SQL queries, joins, and indexing strategies.">
+              <i class="fa-solid fa-database"></i> MySQL
+            </button>
+            <button type="button" class="sku-tag" data-skill="MongoDB" data-desc="NoSQL document storage, aggregation pipelines, and flexible schema design.">
+              <i class="fa-solid fa-server"></i> MongoDB
+            </button>
+          </div>
+        </div>
+
+        <!-- Zone D: DevOps -->
+        <div class="zone-card" data-zone="D">
+          <div class="zone-header">
+            <span class="zone-label">ZONE D</span>
+            <h3><i class="fa-solid fa-truck"></i> DevOps / Tools</h3>
+            <span class="zone-status"><i class="fa-solid fa-circle-check"></i> Fully Stocked</span>
+          </div>
+          <div class="zone-shelf">
+            <button type="button" class="sku-tag" data-skill="Git & GitHub" data-desc="Version control, branching strategies, pull requests, and collaborative workflows.">
+              <i class="fa-brands fa-git-alt"></i> Git & GitHub
+            </button>
+            <button type="button" class="sku-tag" data-skill="Docker" data-desc="Containerization, Docker images, compose files, and deployment automation.">
+              <i class="fa-brands fa-docker"></i> Docker
+            </button>
+            <button type="button" class="sku-tag" data-skill="AWS" data-desc="Cloud infrastructure with EC2 instances and S3 storage basics.">
+              <i class="fa-brands fa-aws"></i> AWS
+            </button>
+            <button type="button" class="sku-tag" data-skill="Postman" data-desc="API testing, collection management, and automated request workflows.">
+              <i class="fa-solid fa-paper-plane"></i> Postman
+            </button>
+          </div>
+        </div>
+
+        <!-- Zone E: CS Fundamentals -->
+        <div class="zone-card" data-zone="E">
+          <div class="zone-header">
+            <span class="zone-label">ZONE E</span>
+            <h3><i class="fa-solid fa-brain"></i> CS Fundamentals</h3>
+            <span class="zone-status"><i class="fa-solid fa-circle-check"></i> Fully Stocked</span>
+          </div>
+          <div class="zone-shelf">
+            <button type="button" class="sku-tag" data-skill="Data Structures & Algorithms" data-desc="Efficient problem solving with arrays, trees, graphs, and sorting algorithms in C++ and Java.">
+              <i class="fa-solid fa-diagram-project"></i> DSA
+            </button>
+            <button type="button" class="sku-tag" data-skill="OOP" data-desc="Object-Oriented Programming — encapsulation, inheritance, polymorphism, and abstraction.">
+              <i class="fa-solid fa-cubes"></i> OOP
+            </button>
+            <button type="button" class="sku-tag" data-skill="Problem Solving" data-desc="Analytical thinking, debugging, and breaking complex problems into manageable parts.">
+              <i class="fa-solid fa-lightbulb"></i> Problem Solving
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Barcode Scanner Reader -->
+      <div class="scanner-reader" id="scanner-reader">
+        <div class="scanner-screen">
+          <div class="scan-line-anim"></div>
+          <div class="scanner-content" id="scanner-content">
+            <div class="scanner-idle">
+              <i class="fa-solid fa-barcode"></i>
+              <p>Ready to scan — select a SKU above</p>
+            </div>
+          </div>
+        </div>
+        <div class="scanner-info">
+          <span class="scanner-status"><i class="fa-solid fa-circle"></i> SCANNER READY</span>
+          <span class="scanner-zone" id="scanner-zone">Zone: —</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects: Active Shipments -->
+    <section id="projects">
+      <h2><i class="fa-solid fa-truck-fast"></i> Active Shipments — Projects</h2>
+      <div class="projects-list-advanced">
+        <div class="project-card-advanced shipment-card featured-project" data-tech="fullstack">
+          <div class="shipment-header">
+            <span class="tracking-num">SHP-001</span>
+            <span class="shipment-status status-delivered">DELIVERED</span>
+          </div>
+          <h3>Smart Life Admin Assistant</h3>
+          <div class="project-tech">
+            <span class="tech-badge java">Java</span>
+            <span class="tech-badge spring">Spring Boot</span>
+            <span class="tech-badge react">React</span>
+            <span class="tech-badge mongo">MongoDB</span>
+          </div>
+          <p>Full-stack task management app with smart prioritization (0–100 score), analytics dashboard, AI assistant, and BCrypt auth. Clone and run locally — source on GitHub.</p>
+          <div class="project-actions">
+            <a href="https://github.com/Mohit-kumar101/smart-life-admin" class="live-demo repo-link" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Source</a>
+            <button class="code-preview-btn"><i class="fa-solid fa-code"></i> Manifest</button>
+          </div>
+          <pre class="code-preview" style="display:none;">public int calculatePriority(Task task) {
+  int score = 0;
+  if (task.isOverdue()) score += 40;
+  score += urgencyScore(task.getDueDate());
+  score += categoryWeight(task.getCategory());
+  return Math.min(score, 100);
+}</pre>
+        </div>
+
+        <div class="project-card-advanced shipment-card" data-tech="fullstack">
+          <div class="shipment-header">
+            <span class="tracking-num">SHP-002</span>
+            <span class="shipment-status status-delivered">DELIVERED</span>
+          </div>
+          <h3>ShrinkPath — URL Shortener</h3>
+          <div class="project-tech">
+            <span class="tech-badge java">Java</span>
+            <span class="tech-badge spring">Spring Boot</span>
+            <span class="tech-badge mongo">MongoDB</span>
+          </div>
+          <p>Production-style URL shortener with MongoDB persistence, DNS-aware redirect safety (SSRF mitigation), BCrypt password gates, expiry and burn-after-N policies, per-click analytics with hashed IP fingerprints, QR codes, OpenAPI/Swagger UI, Spring Actuator metrics, Docker packaging, and GitHub Actions CI.</p>
+          <div class="project-actions">
+            <a href="https://green-path-3d0t.onrender.com" class="live-demo" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-map-location-dot"></i> Live Demo</a>
+            <button class="code-preview-btn"><i class="fa-solid fa-code"></i> Manifest</button>
+          </div>
+          <pre class="code-preview" style="display:none;">@PostMapping("/api/links")
+public LinkResponse create(@RequestBody CreateLinkRequest req) {
+  redirectTargetSafety.validatePublicHttpTarget(req.getTargetUrl());
+  Link link = linkService.create(req);
+  return new LinkResponse(link.getShortUrl(), link.getManagementSecret());
+}</pre>
+        </div>
+
+        <div class="project-card-advanced shipment-card" data-tech="js">
+          <div class="shipment-header">
+            <span class="tracking-num">SHP-003</span>
+            <span class="shipment-status status-delivered">DELIVERED</span>
+          </div>
+          <h3>Weather App</h3>
+          <div class="project-tech">
+            <span class="tech-badge js">JavaScript</span>
+            <span class="tech-badge css">CSS</span>
+            <span class="tech-badge html">HTML</span>
+          </div>
+          <p>Responsive weather dashboard powered by OpenWeatherMap API.</p>
+          <div class="project-actions">
+            <a href="#" class="live-demo" target="_blank"><i class="fa-solid fa-map-location-dot"></i> Track</a>
+            <button class="code-preview-btn"><i class="fa-solid fa-code"></i> Manifest</button>
+          </div>
+          <pre class="code-preview" style="display:none;">fetch('api.openweathermap.org/data/2.5/weather?q=Vancouver')
+  .then(res => res.json())
+  .then(data => console.log(data));</pre>
+        </div>
+
+        <div class="project-card-advanced shipment-card" data-tech="css">
+          <div class="shipment-header">
+            <span class="tracking-num">SHP-004</span>
+            <span class="shipment-status status-delivered">DELIVERED</span>
+          </div>
+          <h3>CSS Animation Showcase</h3>
+          <div class="project-tech"><span class="tech-badge css">CSS</span><span class="tech-badge html">HTML</span></div>
+          <p>Collection of modern, reusable CSS animations and transitions.</p>
+          <div class="project-actions">
+            <a href="#" class="live-demo" target="_blank"><i class="fa-solid fa-map-location-dot"></i> Track</a>
+            <button class="code-preview-btn"><i class="fa-solid fa-code"></i> Manifest</button>
+          </div>
+          <pre class="code-preview" style="display:none;">@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}</pre>
+        </div>
+
+        <div class="project-card-advanced shipment-card" data-tech="html">
+          <div class="shipment-header">
+            <span class="tracking-num">SHP-005</span>
+            <span class="shipment-status status-delivered">DELIVERED</span>
+          </div>
+          <h3>HTML Portfolio Template</h3>
+          <div class="project-tech"><span class="tech-badge html">HTML</span><span class="tech-badge css">CSS</span></div>
+          <p>Clean, responsive portfolio template with semantic HTML and modern CSS.</p>
+          <div class="project-actions">
+            <a href="#" class="live-demo" target="_blank"><i class="fa-solid fa-map-location-dot"></i> Track</a>
+            <button class="code-preview-btn"><i class="fa-solid fa-code"></i> Manifest</button>
+          </div>
+          <pre class="code-preview" style="display:none;"><section class="portfolio">
+  <h2>My Projects</h2>
+</section></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact: Dispatch Center -->
+    <section id="contact" class="contact-section">
+      <div class="contact-bg-visual"></div>
+      <div class="contact-content-card fade-in-contact">
+        <div class="contact-header">
+          <div class="contact-visual">
+            <span class="envelope-icon"><i class="fa-solid fa-headset"></i></span>
+          </div>
+          <div class="contact-titles">
+            <h2><i class="fa-solid fa-tower-broadcast"></i> Dispatch Center</h2>
+            <p class="contact-subheading">Ready to ship your next project? Send a dispatch request!</p>
+          </div>
+        </div>
+        <div class="contact-container">
+          <form class="contact-form dispatch-form" id="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLSeGm6jo5igJoXFh_e3iC_yEfEsc06VqZcVQhVWaqFsNFsT_ag/formResponse" method="POST" target="_blank" autocomplete="off" novalidate>
+            <div class="form-group">
+              <label for="name"><i class="fa-solid fa-user"></i> Sender Name *</label>
+              <input type="text" id="name" name="entry.914981814" required placeholder="Your Name" minlength="2" maxlength="50" />
+              <span class="form-error" id="name-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="email"><i class="fa-solid fa-envelope"></i> Return Address *</label>
+              <input type="email" id="email" name="entry.203031372" required placeholder="you@email.com" />
+              <span class="form-error" id="email-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="message"><i class="fa-solid fa-box"></i> Shipment Details *</label>
+              <textarea id="message" name="entry.259957502" required placeholder="Describe your project..." minlength="10" maxlength="1000" rows="4"></textarea>
+              <span class="form-error" id="message-error"></span>
+            </div>
+            <button type="submit" class="contact-submit">
+              <span class="btn-text"><i class="fa-solid fa-paper-plane"></i> Send Dispatch</span>
+              <span class="btn-loading" style="display:none;">
+                <i class="fa-solid fa-spinner fa-spin"></i> Transmitting...
+              </span>
+            </button>
+          </form>
+
+          <div class="contact-socials">
+            <a href="https://github.com/Mohit-kumar101" class="social-icon github" target="_blank">
+              <i class="fa-brands fa-github"></i>
+              <span class="social-reveal">GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/mohit-k-12b941275/" class="social-icon linkedin" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+              <span class="social-reveal">LinkedIn</span>
+            </a>
+            <a href="mailto:mohit.k3089@gmail.com?subject=Portfolio Contact&body=Hi Mohit,%0D%0A%0D%0AI saw your portfolio and would like to connect.%0D%0A%0D%0ABest regards," class="social-icon email" target="_blank">
+              <i class="fa-solid fa-envelope"></i>
+              <span class="social-reveal">Email</span>
+            </a>
+          </div>
+
+          <div class="console-contact">
+            <button class="console-btn" id="console-contact-btn"><i class="fa-solid fa-terminal"></i> WMS Contact Query</button>
+            <pre class="console-output" id="console-output" style="display:none;"></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="warehouse-footer">
+    <div class="footer-conveyor" aria-hidden="true">
+      <i class="fa-solid fa-truck-moving"></i>
+    </div>
+    <p>&copy; 2026 Mohit Kumar — MK Logistics Warehouse</p>
+  </footer>
+
+  <script src="theme-toggle.js"></script>
+</body>
+</html>
